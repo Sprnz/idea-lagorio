@@ -35,7 +35,8 @@ margin: 20px;
 margin-left: 50px;
 padding: 10px;
 border-radius: 10px;
-background-color: #7A0215;
+background: rgb(122,2,21);
+background: linear-gradient(180deg, rgba(122,2,21,1) 19%, rgba(32,0,12,0.80015756302521) 100%);
 font-size: 22px;
 font-style: italic;}
 
@@ -43,8 +44,13 @@ header nav ul li a
 {text-decoration: none;
 color: #EEEE;}
 
+header nav ul li:hover {background: rgb(58,0,3);
+background: linear-gradient(180deg, rgba(58,0,3,1) 19%, rgba(4,0,1,1) 100%);
+transition: 0.3s;}
+
 
 /*------------------------------------------INICIO----------------------------------------------------------*/
+/*futuro carrusel*/
 .hero {
 padding: 30px;
 text-align: center;
@@ -92,9 +98,10 @@ width: 90%;}
 
 .about div img 
 {padding: 20px;
-height: 100px;
-width: 180px;
-margin-top: 50px;}
+height: 120px;
+width: 200px;
+margin-top: 50px;
+}
 
 .nosotros {display: flex;
 flex-direction: column;
@@ -146,11 +153,17 @@ margin-top: 60px;}
 
 .cursos {margin-top: 40px;}
 
+.cursos div:hover {background-color: #EEEE;
+color: black;
+transition: 0.5s;
+}
+
+.productos img:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
+transition: 0.5s;}
+
+
 /*----------------------------------------------NUESTRO TRABAJO--------------------------------------------------------*/
 /*------------------------------GALERIA*/
-.flex {display: flex;
-justify-content: center;}
-
 
 .grid {
 width: 80%;
@@ -170,6 +183,9 @@ box-shadow: 11px 8px 13px -4px rgba(0,0,0,0.54);
 -moz-box-shadow: 11px 8px 13px -4px rgba(0,0,0,0.54);
 border: #EEEE solid 5px;
 }
+
+.flex {display: flex;
+justify-content: center;}
 /*--------------------------------------*/
 
 
@@ -370,6 +386,9 @@ footer img
 width: 50px;
 filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%);
 padding: 20px;}
+
+footer img:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
+transition: 0.3s;}
 
 
 /*----------------------------------------------MEDIA QUERIES--------------------------------------------------------*/
