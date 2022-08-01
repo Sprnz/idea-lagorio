@@ -167,7 +167,7 @@ font-size: 30px;}
 /*FORMULARIO BOOTSTRAP*/
 
 .accordion-button {background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 100%);
 color: #EEEE;
 font-size: 23px;
 
@@ -178,10 +178,15 @@ font-size: 20px;}
 
 .accordion-item {background-color: #0E0E0E;}
 
+.otra-consulta {display: flex;
+flex-direction: row;
+margin: 15px;
+font-size: large;}
 
-
-
-
+.escribinos {margin-left: 5px;
+text-decoration: underline;
+color:#d82121f1;
+font-size: large;}
 
 /*----------------------------------------------NUESTRO TRABAJO--------------------------------------------------------*/
 /*------------------------------GALERIA*/
@@ -233,20 +238,18 @@ width: 500px;}
 
 
 /*-----------------------------------------------------CONTACTO-----------------------------------------------------*/
-.contacto {height: 100vh;
+.contacto {
 width: 100%;
 background-image:url(../img/acar.jpg);
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
-margin: 10px;
-display: flex;
-align-items: center;}
+margin: 10px;}
 
 .contacto iframe
-{margin: 30px;
-height: 300px;
-width: 300px;}
+{height: 450px;
+width: 450px;
+margin-top: 30px;}
 
 .contacto h2 
 {padding: 30px;
@@ -255,10 +258,35 @@ letter-spacing: 2px;
 font-size: 30px;
 padding: 10px;}
 
-.contacto div 
-{margin-left: 30px;}
+.formulario {width: 450px;
+height: auto;
+margin: auto;
+background: rgba(88, 88, 88, 0.096);
+padding: 10px 20px;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+input {width: 100%;
+margin-bottom: 20px;
+padding: 10px;
+box-sizing: border-box;
+border-radius: 7px;}
 
 
+textarea {width: 410px;
+margin-bottom: 20px;
+padding: 10px;
+box-sizing: border-box;
+border-radius: 7px;}
+
+.boton input {background-color: black;
+color: #EEEE;}
+
+.contacto {display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;}
 
 /*------------------------------------CURSO CHAPA-------------------------------------------------------*/
 .chapa 
