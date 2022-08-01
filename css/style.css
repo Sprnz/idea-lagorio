@@ -60,18 +60,18 @@ display: grid;
 grid-template-columns: 0.5fr 1fr;
 grid-template-rows: 100%;
 }
-
+    
 .hero h1 
 {font-size: 35px;
 letter-spacing: 2px;
 margin-bottom: 10px;}
-
+    
 .hero p 
 {font-size: 20px;
 margin: 10px;
 letter-spacing: 1px;
 }
-
+    
 .hero img
 {height: 220px;
 width: 370px;
@@ -80,7 +80,6 @@ border: #EEEE solid 3px;}
 
 .imagenes {display: flex;
 flex-wrap: wrap;}
-
 
 /*--------------------------------------NOSOTROS-----------------------------------------------------------*/
 .about {
@@ -160,6 +159,28 @@ transition: 0.5s;
 
 .productos img:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
 transition: 0.5s;}
+
+h4 {
+margin: 15px;
+font-size: 30px;}
+
+/*FORMULARIO BOOTSTRAP*/
+
+.accordion-button {background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(14,14,14,1) 100%);
+color: #EEEE;
+font-size: 23px;
+
+}
+
+.accordion-collapse {background-color: #0E0E0E;
+font-size: 20px;}
+
+.accordion-item {background-color: #0E0E0E;}
+
+
+
+
 
 
 /*----------------------------------------------NUESTRO TRABAJO--------------------------------------------------------*/
@@ -390,6 +411,7 @@ padding: 20px;}
 footer img:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
 transition: 0.3s;}
 
+.footer-cursos img {height: 90px; width: 90px;}
 
 /*----------------------------------------------MEDIA QUERIES--------------------------------------------------------*/
 /*------------HEADER-----------------------*/

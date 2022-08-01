@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <header>
         <img src="../img/logoescuela.png" alt="logoescuela">
-<!-----------------------------------------------------NAV---------------------------------------------------------->
+        <!-----------------------------------------------------NAV---------------------------------------------------------->
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -23,31 +27,31 @@
     </header>
 
     <main>
-<!----------------------------------------------------CURSOS--------------------------------------------------------->
+        <!----------------------------------------------------CURSOS--------------------------------------------------------->
         <section class="productos">
             <h2>Nuestros Cursos</h2>
             <div class="cursos">
-<!--------------------------------------------------CURSO 1--------------------------------------------------------->
+                <!--------------------------------------------------CURSO 1--------------------------------------------------------->
                 <div>
                     <h3>Chapa</h3>
                     <a href="./cursochapa.html"><img src="../img/metal.png" alt="logochapa"></a>
                 </div>
-<!--------------------------------------------------CURSO 2--------------------------------------------------------->
+                <!--------------------------------------------------CURSO 2--------------------------------------------------------->
                 <div>
                     <h3>Pintura</h3>
                     <a href="./cursopintura.html"><img src="../img/aerografo.png" alt="logoaerografo"></a>
                 </div>
-<!---------------------------------------------------CURSO 3--------------------------------------------------------->
+                <!---------------------------------------------------CURSO 3--------------------------------------------------------->
                 <div>
                     <h3>Sacabollos</h3>
                     <a href="./cursosacabollos.htm"><img src="../img/hammer.png" alt="logomartillo"></a>
                 </div>
-<!---------------------------------------------------CURSO 4--------------------------------------------------------->
+                <!---------------------------------------------------CURSO 4--------------------------------------------------------->
                 <div>
                     <h3>Detallado</h3>
                     <a href="./cursodetallado.html"><img src="../img/brush.png" alt="logopincel"></a>
                 </div>
-<!---------------------------------------------------CURSO 5-------------------------------------------------------->
+                <!---------------------------------------------------CURSO 5-------------------------------------------------------->
                 <div>
                     <h3 id="rep">Reparación de plásticos</h3>
                     <a href="./cursoreparaciondeplasticos.html"><img src="../img/tools.png" alt="logoherramientas"></a>
@@ -56,20 +60,85 @@
 
             <div>
                 <p>
-                    Además, una vez finalizado el curso te brindamos monitoreo y asesoramiento para tus primeros trabajos.
+                    Además, una vez finalizado el curso te brindamos monitoreo y asesoramiento para tus primeros
+                    trabajos.
                 </p>
             </div>
         </section>
     </main>
 
-<!----------------------------------------------------FOOTER------------------------------------------------------->
-    <footer>
-        <div>
-            <a href="https://es-la.facebook.com/eadeamtallerescuela/" target="_blank" ><img src="../img/facebook.png" alt="logofacebook"></a>
-            <a href="https://www.instagram.com" target="_blank" ><img src="../img/logig.png" alt="logoinstagram"></a>
-            <!--((aun no tiene paguina de instagram))-->
-            <a href="https://wa.me/5491165196601" target="_blank" ><img src="../img/whatsapp.png" alt="logowhatsapp"></a>
+    <!--PREGUNTAS FRECUENTES-------------------------------------------------------------------------------->
+
+    <h4>Preguntas frecuentes</h4>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Necesito experiencia previa?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>No</strong> se necesita experiencia previa. En cada uno de los cursos se expondrá la
+                        metodología de trabajo desde el momento 0 hasta su finalización.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cuánto duran los cursos?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Los cursos tienen una duración de entre 4 y 6 meses dependiendo del contenido del mismo y de la
+                        disponibilidad y evolución del alumno. En casos especiales se dictan clases de recuperación y/o
+                        refuerzo sin cargo extra.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Cuándo comienzan los cursos?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        El inicio de cada curso se coordina por WhatsApp.
+                        Para consultar las próximas fechas de inicio podés ponerte en contacto con nosotros escribiendo
+                        o llamando al +54 9 11 6519-6601. Tené en cuenta que los cupos de los cursos son limitados.
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
+        <!--BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!----------------------------------------------------FOOTER------------------------------------------------------->
+        <footer>
+            <div class="footer-cursos">
+                <a href="https://es-la.facebook.com/eadeamtallerescuela/" target="_blank"><img src="../img/facebook.png"
+                        alt="logofacebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="../img/logig.png" alt="logoinstagram"></a>
+                <!--((aun no tiene paguina de instagram))-->
+                <a href="https://wa.me/5491165196601" target="_blank"><img src="../img/whatsapp.png"
+                        alt="logowhatsapp"></a>
+            </div>
         </footer>
 </body>
+
 </html>
