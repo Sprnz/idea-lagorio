@@ -11,6 +11,8 @@ font-family: 'Bebas Neue', cursive;
 color: #EEEE;
 }
 
+.link-light a {color: #EEEE;}
+.link-ligh {color: #EEEE;}
 
 /*--------------------------------------------------------------HEADER-----------------------------------------------*/
 header {background-color: #d82121ab;
@@ -51,35 +53,31 @@ transition: 0.3s;}
 
 /*------------------------------------------INICIO----------------------------------------------------------*/
 /*futuro carrusel*/
-.hero {
+.hero {height: 100vh;
 padding: 30px;
-text-align: center;
 display: flex;
 align-items: center;
-display: grid;
-grid-template-columns: 0.5fr 1fr;
-grid-template-rows: 100%;
 }
     
 .hero h1 
 {font-size: 35px;
 letter-spacing: 2px;
 margin-bottom: 10px;}
-    
+
 .hero p 
 {font-size: 20px;
 margin: 10px;
 letter-spacing: 1px;
-}
-    
+}    
 .hero img
-{height: 220px;
-width: 370px;
-margin: 10px;
+{height: 350px;
+width: 500px;
 border: #EEEE solid 3px;}
 
-.imagenes {display: flex;
-flex-wrap: wrap;}
+.imagenes {width: 50%;
+margin-left: 200px;}
+.historia {width: 50%;
+text-align: center;}
 
 /*--------------------------------------NOSOTROS-----------------------------------------------------------*/
 .about {
@@ -440,6 +438,7 @@ footer img:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) b
 transition: 0.3s;}
 
 .footer-cursos img {height: 90px; width: 90px;}
+.footer-index img {height: 90px; width: 90px;}
 
 /*----------------------------------------------MEDIA QUERIES--------------------------------------------------------*/
 /*------------HEADER-----------------------*/
@@ -470,9 +469,18 @@ header img {height: 50px; width: 220px;}
 display: flex;
 flex-direction: column;
 justify-content: center;
+margin-top: 50px;
 }
 .imagenes {display: flex;
-justify-content: center;}
+justify-content: center;
+margin: 0%;
+margin-bottom: 50px;}
+}
+
+@media screen and (max-width:1247px) {
+.hero {margin-top: 50px;}
+.imagenes {margin-bottom: 100px;}
+.historia {width: auto;}
 }
 
 @media screen and (max-width:851px) {
@@ -481,12 +489,12 @@ flex-direction: column;
 justify-content: center;}
 }
 
-@media screen and (max-width:396px) {
+@media screen and (max-width:580px) {
 .hero img {
 height: 200px;
 width: 350px;
 margin: 5px;}
-}
+
 
 @media screen and (max-width:365px) {
 .hero h1 {font-size: 25px;}
@@ -655,6 +663,10 @@ align-items: center;}
 .plasticos div {width: auto;
 margin: 5px;}
 }
+}
+
+
+
 
 
 
