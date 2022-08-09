@@ -115,7 +115,8 @@ header nav ul li:hover {
     margin-bottom: 40px;
 }
 
-.p-cursos {text-align: center;}
+.p-cursos {text-align: center;
+margin-top: 40px;}
 
 .p-cursos a {text-decoration: none;}
 
@@ -596,7 +597,7 @@ align-items: flex-end;}
     }
 
     .imagenes {
-        margin-bottom: 100px;
+        margin-bottom: 10px;
     }
 
     .historia {
@@ -610,9 +611,22 @@ align-items: flex-end;}
         flex-direction: column;
         justify-content: center;
     }
+    .hero img {width: 500px;
+    height: 300px;}
+
+    .carousel-inner {width: 500px;}
 }
 
+@media screen and (max-width:550px) {
+    .hero h1 {font-size: 30px;}
 
+    .hero p {font-size: 20px;}
+    
+    .hero img {width: 350px;
+    height: 250px;}
+
+    .carousel-inner {width: 350px;}
+}
 
 @media screen and (max-width:365px) {
     .hero h1 {
@@ -622,6 +636,11 @@ align-items: flex-end;}
     .hero p {
         font-size: 15px;
     }
+
+    .hero img {width: 300px;
+    height: 200px;}
+
+    .carousel-inner {width: 300px;}
 }
 
 /*-----------------NOSOTROS-------------*/
@@ -735,6 +754,25 @@ align-items: flex-end;}
 
 /*------------------CONTACTO---------------*/
 
+@media screen and (max-width:930px) {
+    .boton-fixed img {
+        position: fixed;
+        left: 70px;
+    }
+}
+
+@media screen and (max-width:855px) {
+    .boton-fixed img {
+        position: fixed;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width:7255px) {
+    .boton-fixed img {
+        display: none;}
+}
+
 @media screen and (max-width:710px) {
     .contacto {
         display: flex;
@@ -742,13 +780,25 @@ align-items: flex-end;}
         justify-content: center;
         padding: 10px;
         margin-left: 0px;
-        margin-left: 0px;
-    }
+        margin-left: 0px;}
 
+    .formulario {width: 350px}
+
+    .formulario div textarea {width: 300px;}
+    
     .contacto iframe {
         height: 250px;
-        width: 250px;
-    }
+        width: 250px;}
+}
+
+@media screen and (max-width:535px) {
+    .formulario {width: 250px}
+    
+    .formulario div textarea {width: 200px;}
+    
+    .contacto iframe {
+        height: 250px;
+        width: 250px;}
 }
 
 @media screen and (max-width:520px) {
@@ -771,6 +821,12 @@ align-items: flex-end;}
         margin: 1px;
     }
 }
+
+@media screen and (max-width:350px) {
+    .formulario {width: 200px}
+    
+    .formulario div textarea {width: 155px;
+    height: 50px;}}
 
 /*--------------CURSO CHAPA----------------*/
 
@@ -868,4 +924,11 @@ align-items: flex-end;}
         width: auto;
         margin: 5px;
     }
+}
+
+/*------------FOOTER-----------------------*/
+
+@media screen and (max-width:540px) {
+    footer div img {height: 70px;
+    width: 70px;}
 }
