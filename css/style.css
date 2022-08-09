@@ -112,8 +112,14 @@ header nav ul li:hover {
 
 .carousel-inner {
     width: 700px;
+    margin-bottom: 40px;
 }
 
+.p-cursos {text-align: center;}
+
+.p-cursos a {text-decoration: none;}
+
+.a-nosotros {color: #d82121ab;}
 /*--------------------------------------NOSOTROS-----------------------------------------------------------*/
 .about {
     width: 100;
