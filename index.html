@@ -10,17 +10,45 @@
 </head>
 <body>
     <header>
-        <img src="./img/logoescuela.png" alt="logoescuela">
 <!-----------------------------------------------------NAV---------------------------------------------------------->
-        <nav>
-            <ul>
-                <li><a href="./index.html" class="link-light">Inicio</a></li>
-                <li><a href="./pages/nosotros.html" class="link-light">Nosotros</a></li>
-                <li><a href="./pages/cursos.html" class="link-light">Cursos</a></li>
-                <li><a href="./pages/nuestrotrabajo.html" class="link-light">Nuestro trabajo</a></li>
-                <li><a href="./pages/contacto.html" class="link-light">Contacto</a></li>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./img/logoescuela.png" alt="logo"></a>
+        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/nuestrotrabajo.html">Nuestro trabajo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos <a href="./pages/cursos.html"></a>
+                    </a>
+                    <ul class="dropdown-menu nav-item" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./pages/cursochapa.html">Chapa</a></li>
+                        <li><a class="dropdown-item" href="./pages/cursopintura.html">Pintura</a></li>
+                        <li><a class="dropdown-item" href="./pages/cursosacabollos.html">Sacabollos</a></li>
+                        <li><a class="dropdown-item" href="./pages/cursodetallado.html">Detallado</a></li>
+                        <li><a class="dropdown-item" href="./pages/cursoreparaciondeplasticos.html">Reparacíon de plásticos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
+        </div>
+    </div>
+</nav>
     </header>
 <!-----------------------------------------------------INTRO--------------------------------------------------------->
     <main>
@@ -33,7 +61,7 @@
 <!------------------------------------------------CAROUSEL------------------------------------->
             <div class="imagenes">
                 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                    <div id="myCarousel" class="carousel slide" style="width: 700px; margin: 0 auto">
+                    <div id="myCarousel" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <img src="./img/cocheazul.jpg" class="d-block w-10" alt="...">
@@ -69,7 +97,7 @@
     crossorigin="anonymous"></script>
 <!-----------------------------------------------------FOOTER-------------------------------------------------------->
     <footer>
-    <div class="footer-index">
+    <div>
         <a href="https://es-la.facebook.com/eadeamtallerescuela/" target="_blank" ><img src="./img/facebook.png" alt="logofacebook"></a>
         <a href="https://www.instagram.com" target="_blank" ><img src="./img/logig.png" alt="logoinstagram"></a>
         <!--((aun no tiene paguina de instagram))-->
