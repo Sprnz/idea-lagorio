@@ -769,7 +769,7 @@ align-items: flex-end;}
     }
 }
 
-@media screen and (max-width:7255px) {
+@media screen and (max-width:725px) {
     .boton-fixed img {
         display: none;}
 }
