@@ -574,7 +574,8 @@ footer div img:hover {
 
 @media screen and (max-width:991px) {
 header nav ul li {width: 30%;
-text-align: center}
+text-align: center;
+margin: 3px;}
 header nav ul {display: flex;
 align-items: flex-end;}
 .dropdown-menu li {width: auto;}
