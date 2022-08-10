@@ -1,27 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 * {
     margin: 0;
     padding: 0;
 }
 
-
-
-body {
-    background-color: #0E0E0E;
-    font-family: 'Bebas Neue', cursive;
-    color: #EEEE;
-}
-
-.link-light a {
-    color: #EEEE;
-}
-
-.link-ligh {
-    color: #EEEE;
-}
-
-/*--------------------------------------------------------------HEADER-----------------------------------------------*/
 header img {
     filter: invert(100%) sepia(1%) saturate(35%) hue-rotate(144deg) brightness(113%) contrast(87%);
     height: 70px;
@@ -39,13 +22,13 @@ header nav ul li {
     font-size: 22px;
     margin: 15px;
     border-radius: 10px;
-    background: rgb(122, 2, 21);
-    background: linear-gradient(180deg, rgba(122, 2, 21, 1) 19%, rgba(32, 0, 12, 0.80015756302521) 100%);
+    background: #7a0215;
+    background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%);
 }
 
 header nav ul li:hover {
-    background: rgb(58, 0, 3);
-    background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
+    background: #3a0003;
+    background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
     transition: 0.3s;
 }
 
@@ -54,30 +37,59 @@ header nav ul li:hover {
     color: #EEEE;
 }
 
-.navbar a:hover {
+.navbar:hover {
     color: inherit;
 }
 
 .dropdown-menu {
-    background: rgb(20, 0, 1);
-    background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
+    background: #140001;
+    background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
     transition: 0.3s;
     border-radius: 10px;
 }
 
 .dropdown-menu:hover {
-    background: rgb(46, 22, 23);
-    background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
+    background: #2e1617;
+    background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
     transition: 0.3s;
 }
 
 .navbar-toggler {
-    background: rgb(122, 2, 21);
-    background: linear-gradient(180deg, rgba(122, 2, 21, 1) 19%, rgba(32, 0, 12, 0.80015756302521) 100%);
+    background: #7a0215;
+    background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%);
 }
 
-/*------------------------------------------INICIO----------------------------------------------------------*/
-/*carousel*/
+@media screen and (max-width: 991px) {
+    header nav ul li {
+        width: 30%;
+        text-align: center;
+        margin: 3px;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .dropdown-menu li {
+        width: auto;
+    }
+}
+
+body {
+    background-color: #0E0E0E;
+    font-family: 'Bebas Neue', cursive;
+    color: #EEEE;
+}
+
+.link-light {
+    color: #EEEE;
+}
+
+.link-light a {
+    color: #EEEE;
+}
+
 .hero {
     padding: 30px;
     display: flex;
@@ -103,7 +115,6 @@ header nav ul li:hover {
     border: #EEEE solid 3px;
 }
 
-
 .historia {
     width: 75%;
     text-align: center;
@@ -115,443 +126,19 @@ header nav ul li:hover {
     margin-bottom: 40px;
 }
 
-.p-cursos {text-align: center;
-margin-top: 40px;}
-
-.p-cursos a {text-decoration: none;}
-
-.a-nosotros {color: #d82121ab;}
-/*--------------------------------------NOSOTROS-----------------------------------------------------------*/
-.about {
-    width: 100;
+.p-cursos {
     text-align: center;
-    padding: 30px;
-}
-
-.about div h2 {
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.about div p {
-    font-size: 23px;
-    width: 90%;
-}
-
-.about div img {
-    padding: 20px;
-    height: 120px;
-    width: 200px;
-    margin-top: 50px;
-}
-
-.nosotros {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*------------------------------------------------PRODUCTOS--------------------------------------------------------------*/
-.productos {
-    text-align: center;
-    padding: 30px;
-    width: 100;
-}
-
-
-.productos h2 {
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.productos h3 {
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-    margin: 10px;
-}
-
-/*modificacion adicional al texto del curso de reparacion porque no entraba en la caja*/
-#rep {
-    font-size: 14px;
-}
-
-.productos img {
-    height: 120px;
-    width: 120px;
-    filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%);
-}
-
-.productos div div {
-    height: 200px;
-    width: 150px;
-    border: 1px solid black;
-    margin: 20px;
-    background-color: #000000bd;
-    border-radius: 50px;
-    display: inline-block;
-}
-
-.productos p {
-    font-size: 35px;
-    font-style: italic;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding: 10px;
-    width: 100%;
-    margin-top: 60px;
-}
-
-.cursos {
     margin-top: 40px;
 }
 
-.cursos div:hover {
-    background-color: #EEEE;
-    color: black;
-    transition: 0.5s;
+.p-cursos a {
+    text-decoration: none;
 }
 
-.productos img:hover {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
-    transition: 0.5s;
+.a-nosotros {
+    color: #d82121ab;
 }
 
-h4 {
-    margin: 15px;
-    font-size: 30px;
-}
-
-/*FORMULARIO BOOTSTRAP*/
-
-.accordion-button {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(14, 14, 14, 1) 100%);
-    color: #EEEE;
-    font-size: 23px;
-
-}
-
-.accordion-collapse {
-    background-color: #0E0E0E;
-    font-size: 20px;
-}
-
-.accordion-item {
-    background-color: #0E0E0E;
-}
-
-.otra-consulta {
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-    font-size: large;
-}
-
-.escribinos {
-    margin-left: 5px;
-    text-decoration: underline;
-    color: #d82121f1;
-    font-size: large;
-}
-
-/*----------------------------------------------NUESTRO TRABAJO--------------------------------------------------------*/
-/*------------------------------GALERIA*/
-
-.grid {
-    width: 80%;
-    margin-top: 5px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
-    gap: 20px;
-}
-
-.grid div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
-    -webkit-box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
-    -moz-box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
-    border: #EEEE solid 5px;
-}
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-/*--------------------------------------*/
-
-
-.trabajo {
-    text-align: center;
-    width: 100;
-}
-
-.trabajo h2 {
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.videos {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    gap: 30px;
-}
-
-.videos div iframe {
-    border: #EEEE solid 5px;
-    height: 250px;
-    width: 500px;
-}
-
-
-/*-----------------------------------------------------CONTACTO-----------------------------------------------------*/
-.contacto {
-    width: 100%;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-}
-
-.contacto iframe {
-    height: 450px;
-    width: 450px;
-    margin-top: 30px;
-}
-
-.contacto h2 {
-    padding: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 30px;
-    padding: 10px;
-}
-
-.formulario {
-    width: 450px;
-    height: auto;
-    margin: auto;
-    background: rgba(88, 88, 88, 0.096);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 7px;
-}
-
-
-textarea {
-    width: 410px;
-    margin-bottom: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 7px;
-}
-
-.boton input {
-    background-color: black;
-    color: #EEEE;
-}
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.boton-fixed img {
-    position: fixed;
-    bottom: 20px;
-    left: 100px;
-    height: 87px;
-    width: 87px;
-}
-
-.animate__animated.animate__flash {
-    --animate-duration: 2s;
-}
-
-/*------------------------------------CURSO CHAPA-------------------------------------------------------*/
-.chapa {
-    width: 100;
-    margin-top: 20px;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-.chapa h2 {
-    padding-left: 200px;
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
-.chapa ul {
-    margin-top: 10px;
-    font-size: 30px;
-    padding: 10px;
-    padding-left: 200px;
-}
-
-/*------------------------------------CURSO PINTURA---------------------------------------------------------------*/
-.pintura {
-    width: 100%;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-}
-
-.programa-flex {
-    display: flex;
-    gap: 70px;
-    justify-content: flex-start;
-    padding-left: 20px;
-    padding-top: 40px;
-}
-
-
-.pintura h2 {
-    padding-left: 20px;
-    font-size: 40px;
-    letter-spacing: 2px;
-}
-
-.pintura ul {
-    margin-top: 10px;
-    font-size: 30px;
-    padding: 10px;
-    padding-left: 20px;
-}
-
-
-/*--------------------------------------------------CURSO SACABOLLOS------------------------------------------------*/
-.sacabollos {
-    height: 100vh;
-    width: 100;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-}
-
-.sacabollos div {
-    width: 50%;
-    margin-left: 50px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.sacabollos div h2 {
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.sacabollos div p {
-    font-size: larger
-}
-
-.sacabollos {
-    display: flex;
-    align-items: center;
-}
-
-
-/*--------------------------------------CURSO DETALLADO----------------------------------------------------------------*/
-.detallado {
-    height: 100vh;
-    width: 100;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-}
-
-.detallado div {
-    width: 50%;
-    margin-left: 50px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.detallado div h2 {
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.detallado div p {
-    font-size: larger
-}
-
-.detallado {
-    display: flex;
-    align-items: center;
-}
-
-/*------------------------------CURSO REP PLASTICOS-----------------------------------------------------------*/
-.plasticos {
-    height: 100vh;
-    width: 100;
-    background-image: url(../img/acar.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    margin: 10px;
-}
-
-.plasticos div {
-    width: 50%;
-    margin-left: 50px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.plasticos div h2 {
-    padding: 30px;
-    font-size: 30px;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.plasticos div p {
-    font-size: larger
-}
-
-.plasticos {
-    display: flex;
-    align-items: center;
-}
-
-/*-----------------------------------------FOOTER-----------------------------------------------------------------*/
 footer {
     background-color: #d82121ab;
     text-align: center;
@@ -569,367 +156,9 @@ footer div img:hover {
     transition: 0.3s;
 }
 
-/*----------------------------------------------MEDIA QUERIES--------------------------------------------------------*/
-/*------------HEADER-----------------------*/
-
-@media screen and (max-width:991px) {
-header nav ul li {width: 30%;
-text-align: center;
-margin: 3px;}
-header nav ul {display: flex;
-align-items: flex-end;}
-.dropdown-menu li {width: auto;}
-}
-
-/*-----------------INTRO------------------*/
-
-@media screen and (max-width:1247px) {
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 50px;
+@media screen and (max-width: 540px) {
+    footer div img {
+        height: 70px;
+        width: 70px;
     }
-}
-
-@media screen and (max-width:1247px) {
-    .hero {
-        margin-top: 50px;
-    }
-
-    .imagenes {
-        margin-bottom: 10px;
-    }
-
-    .historia {
-        width: auto;
-    }
-}
-
-@media screen and (max-width:851px) {
-    .hero {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .hero img {width: 500px;
-    height: 300px;}
-
-    .carousel-inner {width: 500px;}
-}
-
-@media screen and (max-width:550px) {
-    .hero h1 {font-size: 30px;}
-
-    .hero p {font-size: 20px;}
-    
-    .hero img {width: 350px;
-    height: 250px;}
-
-    .carousel-inner {width: 350px;}
-}
-
-@media screen and (max-width:365px) {
-    .hero h1 {
-        font-size: 25px;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    .hero img {width: 300px;
-    height: 200px;}
-
-    .carousel-inner {width: 300px;}
-}
-
-/*-----------------NOSOTROS-------------*/
-
-@media screen and (max-width:365px) {
-    .about div h2 {
-        font-size: 25px;
-    }
-
-    .about div p {
-        font-size: 15px;
-    }
-
-    .about div img {
-        padding: 20px;
-        height: 80px;
-        width: 160px;
-        margin-top: 10px;
-    }
-}
-
-/*---------------CURSOS----------------*/
-
-@media screen and (max-width:620px) {
-    .productos h2 {
-        font-size: 25px;
-    }
-
-    .productos p {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width:350px) {
-    .productos p {
-        font-size: 20px;
-    }
-}
-
-/*------------TRABAJO---------------*/
-
-@media screen and (max-width:1051px) {
-    .videos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: 200px;
-    }
-}
-
-@media screen and (max-width:810px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
-    }
-
-    .videos div iframe {
-        height: 300px;
-        width: 550px;
-    }
-}
-
-@media screen and (max-width:670px) {
-    .videos div iframe {
-        height: 250px;
-        width: 500px;
-        border: none;
-    }
-}
-
-@media screen and (max-width:560px) {
-    .videos div iframe {
-        height: 200px;
-        width: 450px;
-        border: none;
-    }
-
-    .grid {
-        grid-auto-rows: 200px;
-    }
-}
-
-@media screen and (max-width:490px) {
-    .videos div iframe {
-        height: 150px;
-        width: 300px;
-        border: none;
-    }
-
-    .grid {
-        grid-auto-rows: 150px;
-    }
-}
-
-@media screen and (max-width:425px) {
-    .videos div iframe {
-        height: 100px;
-        width: 250px;
-        border: none;
-    }
-
-    .grid {
-        grid-auto-rows: 100px;
-    }
-}
-
-/*------------------CONTACTO---------------*/
-
-@media screen and (max-width:930px) {
-    .boton-fixed img {
-        position: fixed;
-        left: 70px;
-    }
-}
-
-@media screen and (max-width:855px) {
-    .boton-fixed img {
-        position: fixed;
-        left: 30px;
-    }
-}
-
-@media screen and (max-width:725px) {
-    .boton-fixed img {
-        display: none;}
-}
-
-@media screen and (max-width:710px) {
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
-        margin-left: 0px;
-        margin-left: 0px;}
-
-    .formulario {width: 350px}
-
-    .formulario div textarea {width: 300px;}
-    
-    .contacto iframe {
-        height: 250px;
-        width: 250px;}
-}
-
-@media screen and (max-width:535px) {
-    .formulario {width: 250px}
-    
-    .formulario div textarea {width: 200px;}
-    
-    .contacto iframe {
-        height: 250px;
-        width: 250px;}
-}
-
-@media screen and (max-width:520px) {
-    .contacto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .contacto h2 {
-        font-size: 25px;
-    }
-
-    .contacto iframe {
-        height: 200px;
-        width: 200px;
-    }
-
-    .contacto div {
-        margin: 1px;
-    }
-}
-
-@media screen and (max-width:350px) {
-    .formulario {width: 200px}
-    
-    .formulario div textarea {width: 155px;
-    height: 50px;}}
-
-/*--------------CURSO CHAPA----------------*/
-
-@media screen and (max-width:795px) {
-    .programa-chapa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .chapa h2 {
-        padding-left: 40px;
-    }
-
-    .chapa ul {
-        padding-left: 40px;
-    }
-}
-
-@media screen and (max-width:415px) {
-    .chapa h2 {
-        font-size: 30px;
-    }
-
-    .chapa ul {
-        font-size: 20px;
-    }
-}
-
-/*--------------CURSO PINTURA----------------*/
-
-@media screen and (max-width:810px) {
-    .programa-flex {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:415px) {
-    .programa-flex h2 {
-        font-size: 30px;
-    }
-
-    .programa-flex ul {
-        font-size: 20px;
-    }
-}
-
-/*-------CURSO SACABOLLOS -------*/
-
-@media screen and (max-width:810px) {
-    .sacabollos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .sacabollos div {
-        width: auto;
-        margin: 5px;
-    }
-}
-
-/*----------CURSO DETALLADO ------------------*/
-
-@media screen and (max-width:810px) {
-    .detallado {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .detallado div {
-        width: auto;
-        margin: 5px;
-    }
-}
-
-/*-------CURSO REPARACION DE PLASTICOS -------*/
-
-@media screen and (max-width:810px) {
-    .plasticos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .plasticos div {
-        width: auto;
-        margin: 5px;
-    }
-}
-
-/*------------FOOTER-----------------------*/
-
-@media screen and (max-width:540px) {
-    footer div img {height: 70px;
-    width: 70px;}
 }
