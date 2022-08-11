@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 .hero {
     padding: 30px;
     display: flex;
@@ -34,5 +36,5 @@
         a {text-decoration: none;}
 }
 
-.a-nosotros {color: #d82121ab;}
+.a-nosotros {color: $color-principal;}
 

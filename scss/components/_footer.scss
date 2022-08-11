@@ -1,5 +1,7 @@
+@import "../base/variables";
+
 footer {
-    background-color: #d82121ab;
+    background-color: $color-principal;
     text-align: center;
     div {
         img {

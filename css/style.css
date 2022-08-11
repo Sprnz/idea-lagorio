@@ -1,164 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #0E0E0E;
+  font-family: 'Bebas Neue', cursive;
+  color: #EEEE; }
+
+.link-light {
+  color: #EEEE; }
+  .link-light a {
+    color: #EEEE; }
 
 header img {
-    filter: invert(100%) sepia(1%) saturate(35%) hue-rotate(144deg) brightness(113%) contrast(87%);
-    height: 70px;
-    width: 250px;
-}
+  filter: invert(100%) sepia(1%) saturate(35%) hue-rotate(144deg) brightness(113%) contrast(87%);
+  height: 70px;
+  width: 250px; }
 
 header nav {
-    background-color: #d82121ab;
-    height: 100px;
-    border-radius: 5px;
-}
-
-header nav ul li {
+  background-color: #d82121ab;
+  height: 100px;
+  border-radius: 5px; }
+  header nav ul li {
     font-style: italic;
     font-size: 22px;
     margin: 15px;
     border-radius: 10px;
     background: #7a0215;
-    background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%);
-}
-
-header nav ul li:hover {
-    background: #3a0003;
-    background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
-    transition: 0.3s;
-}
+    background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%); }
+    header nav ul li:hover {
+      background: #3a0003;
+      background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
+      transition: 0.3s; }
 
 .navbar a {
-    text-decoration: none;
-    color: #EEEE;
-}
+  text-decoration: none;
+  color: #EEEE; }
 
 .navbar:hover {
-    color: inherit;
-}
+  color: inherit; }
 
 .dropdown-menu {
-    background: #140001;
-    background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-.dropdown-menu:hover {
+  background: #140001;
+  background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
+  transition: 0.3s;
+  border-radius: 10px; }
+  .dropdown-menu:hover {
     background: #2e1617;
     background: linear-gradient(180deg, #3a0003 19%, #040001 100%);
-    transition: 0.3s;
-}
+    transition: 0.3s; }
 
 .navbar-toggler {
-    background: #7a0215;
-    background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%);
-}
+  background: #7a0215;
+  background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%); }
 
 @media screen and (max-width: 991px) {
-    header nav ul li {
-        width: 30%;
-        text-align: center;
-        margin: 3px;
-    }
-
-    header nav ul {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .dropdown-menu li {
-        width: auto;
-    }
-}
-
-body {
-    background-color: #0E0E0E;
-    font-family: 'Bebas Neue', cursive;
-    color: #EEEE;
-}
-
-.link-light {
-    color: #EEEE;
-}
-
-.link-light a {
-    color: #EEEE;
-}
+  header nav ul li {
+    width: 30%;
+    text-align: center;
+    margin: 3px; }
+  header nav ul {
+    display: flex;
+    align-items: flex-end; }
+  .dropdown-menu li {
+    width: auto; } }
 
 .hero {
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero h1 {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .hero h1 {
     font-size: 35px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.hero p {
+    margin-bottom: 10px; }
+  .hero p {
     font-size: 20px;
     margin: 10px;
-    letter-spacing: 1px;
-}
-
-.hero img {
+    letter-spacing: 1px; }
+  .hero img {
     height: 500px;
     width: 700px;
-    border: #EEEE solid 3px;
-}
+    border: #EEEE solid 3px; }
 
 .historia {
-    width: 75%;
-    text-align: center;
-    margin-bottom: 20px;
-}
+  width: 75%;
+  text-align: center;
+  margin-bottom: 20px; }
 
 .carousel-inner {
-    width: 700px;
-    margin-bottom: 40px;
-}
+  width: 700px;
+  margin-bottom: 40px; }
 
 .p-cursos {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.p-cursos a {
-    text-decoration: none;
-}
+  text-align: center;
+  margin-top: 40px; }
+  .p-cursos a {
+    text-decoration: none; }
 
 .a-nosotros {
-    color: #d82121ab;
-}
+  color: #d82121ab; }
 
 footer {
-    background-color: #d82121ab;
-    text-align: center;
-}
-
-footer div img {
+  background-color: #d82121ab;
+  text-align: center; }
+  footer div img {
     height: 90px;
     width: 90px;
     filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%);
-    padding: 20px;
-}
-
-footer div img:hover {
-    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
-    transition: 0.3s;
-}
+    padding: 20px; }
+    footer div img:hover {
+      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
+      transition: 0.3s; }
 
 @media screen and (max-width: 540px) {
-    footer div img {
-        height: 70px;
-        width: 70px;
-    }
-}
+  footer div img {
+    height: 70px;
+    width: 70px; } }
