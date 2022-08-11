@@ -55,17 +55,6 @@ header nav {
   background: #7a0215;
   background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%); }
 
-@media screen and (max-width: 991px) {
-  header nav ul li {
-    width: 30%;
-    text-align: center;
-    margin: 3px; }
-  header nav ul {
-    display: flex;
-    align-items: flex-end; }
-  .dropdown-menu li {
-    width: auto; } }
-
 .hero {
   padding: 30px;
   display: flex;
@@ -113,6 +102,65 @@ footer {
     footer div img:hover {
       filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
       transition: 0.3s; }
+
+@media screen and (max-width: 991px) {
+  header nav ul li {
+    width: 30%;
+    text-align: center;
+    margin: 3px; }
+  header nav ul {
+    display: flex;
+    align-items: flex-end; }
+  .dropdown-menu li {
+    width: auto; } }
+
+@media screen and (max-width: 1247px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px; } }
+
+@media screen and (max-width: 1247px) {
+  .hero {
+    margin-top: 50px; }
+  .imagenes {
+    margin-bottom: 10px; }
+  .historia {
+    width: auto; } }
+
+@media screen and (max-width: 851px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .hero img {
+    width: 500px;
+    height: 300px; }
+  .carousel-inner {
+    width: 500px; } }
+
+@media screen and (max-width: 550px) {
+  .hero h1 {
+    font-size: 30px; }
+  .hero p {
+    font-size: 20px; }
+  .hero img {
+    width: 350px;
+    height: 250px; }
+  .carousel-inner {
+    width: 350px; } }
+
+@media screen and (max-width: 365px) {
+  .hero h1 {
+    font-size: 25px; }
+  .hero p {
+    font-size: 15px; }
+  .hero img {
+    width: 300px;
+    height: 200px; }
+  .carousel-inner {
+    width: 300px; } }
 
 @media screen and (max-width: 540px) {
   footer div img {

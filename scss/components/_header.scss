@@ -48,11 +48,3 @@ header {
     background: rgb(122, 2, 21);
     background: linear-gradient(180deg, rgba(122, 2, 21, 1) 19%, rgba(32, 0, 12, 0.80015756302521) 100%);}
 
-@media screen and (max-width:991px) {
-    header nav ul li {width: 30%;
-    text-align: center;
-    margin: 3px;}
-    header nav ul {display: flex;
-    align-items: flex-end;}
-    .dropdown-menu li {width: auto;}
-    }
