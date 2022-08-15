@@ -172,6 +172,9 @@ header nav {
   color: #d82121f1;
   font-size: large; }
 
+.animate__animated.animate__flash {
+  --animate-duration: 2s; }
+
 footer {
   background-color: #d82121ab;
   text-align: center; }
