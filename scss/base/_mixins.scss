@@ -1,0 +1,8 @@
+@mixin fuentes ($size, $color, $align, $spacing, $margin){
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+    letter-spacing: $spacing;
+    margin: $margin;
+}
+

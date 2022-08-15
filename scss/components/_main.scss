@@ -1,4 +1,9 @@
+//index 
+
 @import "../base/variables";
+@import "../base/extend";
+@import "../base/maps";
+@import "../base/mixins";
 
 .hero {
     padding: 30px;
@@ -16,7 +21,7 @@
     img {
         height: 500px;
         width: 700px;
-        border: #EEEE solid 3px;}
+        border: $color-fuentes-principales solid 3px;}
 }
 
 .historia {
@@ -37,4 +42,72 @@
 }
 
 .a-nosotros {color: $color-principal;}
+
+//cursos
+
+#rep {font-size: 14px}
+
+.productos {
+    text-align: center;
+    padding: 30px;
+    width: 100;
+    h1 {@include fuentes(30px, #EEEE, center, 2px, 0px)
+    }
+    h2 {@include fuentes(20px, #EEEE, center, 2px, 10px)}
+    img {&:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
+        transition: 0.5s;}
+        height: 120px;
+        width: 120px;
+        filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%);}
+    div {div {@extend %diseño-contenedores-cursos}}
+    p {font-size: 35px;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding: 10px;
+        width: 100%;
+        margin-top: 60px;}
+}
+
+.cursos {
+    margin-top: 40px;
+    div {&:hover {background-color: $color-fuentes-principales;
+        color: black;
+        transition: 0.5s;}}
+}
+
+.faq {h3 {margin: 15px;
+    font-size: 30px;}}
+
+.accordion-button {
+    background: map-get($diseño-acordion, bg-color);
+    background: map-get($diseño-acordion, bg-gradient);
+    color: map-get($diseño-acordion, color-acordion);
+    font-size: map-get($diseño-acordion, fuente-acordion);
+}
+
+.accordion-collapse {
+    background-color: #0E0E0E;
+    font-size: 20px;
+    border: $color-fuentes-principales solid 1px;
+}
+
+.accordion-item {
+    background-color: #0E0E0E;}
+
+.otra-consulta {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    font-size: large;
+}
+
+.escribinos {
+    margin-left: 5px;
+    text-decoration: underline;
+    color: #d82121f1;
+    font-size: large;
+}
+
+
 

@@ -128,7 +128,7 @@ margin-top: 40px;}
     padding: 30px;
 }
 
-.about div h2 {
+.about div h1 {
     font-size: 30px;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -160,13 +160,13 @@ margin-top: 40px;}
 }
 
 
-.productos h2 {
+.productos h1 {
     font-size: 30px;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.productos h3 {
+.productos h2 {
     font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
@@ -219,7 +219,7 @@ margin-top: 40px;}
     transition: 0.5s;
 }
 
-h4 {
+h3 {
     margin: 15px;
     font-size: 30px;
 }
@@ -293,7 +293,7 @@ h4 {
     width: 100;
 }
 
-.trabajo h2 {
+.trabajo h1 {
     padding: 30px;
     font-size: 30px;
     text-align: center;
@@ -331,7 +331,7 @@ h4 {
     margin-top: 30px;
 }
 
-.contacto h2 {
+.contacto h1 {
     padding: 30px;
     text-align: center;
     letter-spacing: 2px;
@@ -401,7 +401,7 @@ textarea {
     background-size: cover;
 }
 
-.chapa h2 {
+.chapa h1 {
     padding-left: 200px;
     font-size: 40px;
     letter-spacing: 2px;
@@ -433,6 +433,12 @@ textarea {
     padding-top: 40px;
 }
 
+
+.pintura h1 {
+    padding-left: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
 
 .pintura h2 {
     padding-left: 20px;
@@ -466,7 +472,7 @@ textarea {
     margin-top: 50px;
 }
 
-.sacabollos div h2 {
+.sacabollos div h1 {
     padding: 30px;
     font-size: 30px;
     text-align: center;
@@ -501,7 +507,7 @@ textarea {
     margin-top: 50px;
 }
 
-.detallado div h2 {
+.detallado div h1 {
     padding: 30px;
     font-size: 30px;
     text-align: center;
@@ -535,7 +541,7 @@ textarea {
     margin-top: 50px;
 }
 
-.plasticos div h2 {
+.plasticos div h1 {
     padding: 30px;
     font-size: 30px;
     text-align: center;

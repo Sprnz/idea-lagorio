@@ -55,6 +55,15 @@ header nav {
   background: #7a0215;
   background: linear-gradient(180deg, #7a0215 19%, rgba(32, 0, 12, 0.800158) 100%); }
 
+.productos div div {
+  height: 200px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: #000000bd;
+  border-radius: 50px;
+  display: inline-block; }
+
 .hero {
   padding: 30px;
   display: flex;
@@ -90,6 +99,78 @@ header nav {
 
 .a-nosotros {
   color: #d82121ab; }
+
+#rep {
+  font-size: 14px; }
+
+.productos {
+  text-align: center;
+  padding: 30px;
+  width: 100; }
+  .productos h1 {
+    font-size: 30px;
+    color: #EEEE;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 0px; }
+  .productos h2 {
+    font-size: 20px;
+    color: #EEEE;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px; }
+  .productos img {
+    height: 120px;
+    width: 120px;
+    filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%); }
+    .productos img:hover {
+      filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
+      transition: 0.5s; }
+  .productos p {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px; }
+
+.cursos {
+  margin-top: 40px; }
+  .cursos div:hover {
+    background-color: #EEEE;
+    color: black;
+    transition: 0.5s; }
+
+.faq h3 {
+  margin: 15px;
+  font-size: 30px; }
+
+.accordion-button {
+  background: black;
+  background: linear-gradient(180deg, black 0%, #0e0e0e 100%);
+  color: #EEEE;
+  font-size: 23px; }
+
+.accordion-collapse {
+  background-color: #0E0E0E;
+  font-size: 20px;
+  border: #EEEE solid 1px; }
+
+.accordion-item {
+  background-color: #0E0E0E; }
+
+.otra-consulta {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  font-size: large; }
+
+.escribinos {
+  margin-left: 5px;
+  text-decoration: underline;
+  color: #d82121f1;
+  font-size: large; }
 
 footer {
   background-color: #d82121ab;
