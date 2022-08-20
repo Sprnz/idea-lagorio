@@ -12,39 +12,30 @@ header {
         ul {
             li {
                 font-style: italic;
-                font-size: 22px;
+                font-size: 27px;
+                letter-spacing: 1px;
                 margin: 15px;
                 border-radius: 10px;
-                background: rgb(122, 2, 21);
-                background: linear-gradient(180deg, rgba(122, 2, 21, 1) 19%, rgba(32, 0, 12, 0.80015756302521) 100%);
-                &:hover {
-                    background: rgb(58, 0, 3);
-                    background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
-                    transition: 0.3s;}
+                &:hover {text-decoration: underline;}
             }
         }
     }
 }
 
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
 .navbar {
     a{text-decoration: none;
     color: #EEEE;}
-    &:hover {color: inherit;}
-}
+    &:hover {color: inherit;}}
 
-.dropdown-menu {
-    background: rgb(20, 0, 1);
-    background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
-    transition: 0.3s;
-    border-radius: 10px;
-    &:hover {
-        background: rgb(46, 22, 23);
-        background: linear-gradient(180deg, rgba(58, 0, 3, 1) 19%, rgba(4, 0, 1, 1) 100%);
-        transition: 0.3s;
-    }
-}
+.navbar-collapse {background-color: $color-principal;}
 
 .navbar-toggler {
-    background: rgb(122, 2, 21);
-    background: linear-gradient(180deg, rgba(122, 2, 21, 1) 19%, rgba(32, 0, 12, 0.80015756302521) 100%);}
+    background-color: #EEEE;}
 

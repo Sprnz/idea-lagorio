@@ -1,9 +1,9 @@
-//index 
-
 @import "../base/variables";
 @import "../base/extend";
 @import "../base/maps";
 @import "../base/mixins";
+
+//index 
 
 .hero {
     padding: 30px;
@@ -21,7 +21,7 @@
     img {
         height: 500px;
         width: 700px;
-        border: $color-fuentes-principales solid 3px;}
+        }
 }
 
 .historia {
@@ -41,7 +41,81 @@
         a {text-decoration: none;}
 }
 
-.a-nosotros {color: $color-principal;}
+
+.a-nosotros {color: #EEEE;
+&:hover {text-decoration: underline;}
+}
+
+//nosotros
+
+.about {
+    width: 100;
+    text-align: center;
+    padding: 30px;
+    div {h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;}
+        p {
+            font-size: 23px;
+            width: 90%;}
+        img {
+            padding: 20px;
+            height: 120px;
+            width: 200px;
+            margin-top: 50px;}
+        }
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//nuestro trabajo
+
+.grid {
+    width: 80%;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    gap: 20px;
+    div {img {width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
+        -webkit-box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
+        -moz-box-shadow: 11px 8px 13px -4px rgba(0, 0, 0, 0.54);
+        border: #EEEE solid 5px;}
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;}
+
+.trabajo {
+    text-align: center;
+    width: 100;
+    h1 {padding: 30px;
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 2px;}
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+    div {iframe {border: #EEEE solid 5px;
+        height: 250px;
+        width: 500px;}
+    }
+}
 
 //cursos
 
@@ -51,17 +125,14 @@
     text-align: center;
     padding: 30px;
     width: 100;
-    //mixin
     h1 {@include fuentes(30px, #EEEE, center, 2px, 0px)
     }
     h2 {@include fuentes(20px, #EEEE, center, 2px, 10px)}
-    //---
     img {&:hover {filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(139deg) brightness(100%) contrast(103%);
         transition: 0.5s;}
         height: 120px;
         width: 120px;
         filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(33deg) brightness(103%) contrast(106%);}
-        //extend
     div {div {@extend %diseño-contenedores-cursos}}
     p {font-size: 35px;
         font-style: italic;
@@ -74,15 +145,27 @@
 
 .cursos {
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     div {&:hover {background-color: $color-fuentes-principales;
         color: black;
         transition: 0.5s;}}
 }
 
-.faq {h3 {margin: 15px;
-    font-size: 30px;}}
+.faq {padding-top: 10px;
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    background-color: black;
+    border: rgb(39, 39, 39) solid 2px;
+    border-radius: 15px;
+    h3 {margin: 15px;
+    font-size: 30px;}
+    }
 
-//map
+
 .accordion-button {
     background: map-get($diseño-acordion, bg-color);
     background: map-get($diseño-acordion, bg-gradient);
@@ -93,7 +176,6 @@
 .accordion-collapse {
     background-color: #0E0E0E;
     font-size: 20px;
-    border: $color-fuentes-principales solid 1px;
 }
 
 .accordion-item {
@@ -102,18 +184,158 @@
 .otra-consulta {
     display: flex;
     flex-direction: row;
-    margin: 15px;
+    justify-content: center;
+    margin-top: 15px;
     font-size: large;
+    p {font-size: 30px;}
+    a {font-size: 30px;}
 }
 
 .escribinos {
     margin-left: 5px;
-    text-decoration: underline;
     color: #d82121f1;
     font-size: large;
+    text-decoration: none;
+    &:hover {text-decoration: underline;}
 }
 
 .animate__animated.animate__flash {
     --animate-duration: 2s;
 }
 
+//contacto
+
+.contacto {
+    width: 100%;
+    background-image: url(../img/acar.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    iframe {height: 450px;
+        width: 450px;
+        margin-top: 30px;}
+    h1 {padding: 30px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 30px;
+        padding: 10px;}
+}
+
+.formulario {
+    width: 450px;
+    height: auto;
+    margin: auto;
+    background: rgba(88, 88, 88, 0.096);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+textarea {
+    width: 410px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.boton input {
+    background-color: black;
+    color: #EEEE;
+}
+
+.boton-fixed img {
+    position: fixed;
+    bottom: 20px;
+    left: 100px;
+    height: 87px;
+    width: 87px;
+}
+
+.animate__animated.animate__flash {
+    --animate-duration: 2s;
+}
+
+//curso chapa
+
+.chapa {
+    width: 100%;
+    background-image: url(../img/acar.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    h1 {padding-left: 80px;
+        font-size: 35px;
+        letter-spacing: 2px;
+        }
+    ul {margin-bottom: inherit;
+        font-size: 25px;
+        padding-left: 80px;}
+}
+
+.boton-curso {a {text-decoration: none;
+color: $color-fuentes-principales;}
+width: fit-content;
+background-color: #d82121f1;
+border-radius: 7px;
+border: #b31b1bf1 solid 3px;
+text-align: center;
+margin-left: 100px;
+margin-top: 20px;
+font-size: 20px;
+padding: 13px 7px 1px 7px;
+&:hover {text-decoration: underline;
+background-color: #b11f33f1;}}
+
+//curso pintura
+
+.pintura {
+    width: 100%;
+    background-image: url(../img/acar.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 10px;
+    h1 {padding-left: 20px;
+        font-size: 40px;
+        letter-spacing: 2px;}
+    h2 {
+        padding-left: 20px;
+        font-size: 40px;
+        letter-spacing: 2px;}
+    ul {margin-top: 10px;
+        font-size: 30px;
+        padding: 10px;
+        padding-left: 20px;}
+}
+
+.programa-flex {
+    display: flex;
+    gap: 70px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+//curso sacabollos - detallado - rep plasticos
+
+.sacabollos {@extend %programas;}
+
+.detallado {@extend %programas;}
+
+.plasticos {@extend %programas;}
