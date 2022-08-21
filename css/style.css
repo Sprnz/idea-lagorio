@@ -13,6 +13,27 @@ body {
   .link-light a {
     color: #EEEE; }
 
+.boton-curso {
+  display: flex;
+  justify-content: center; }
+  .boton-curso a {
+    text-decoration: none;
+    color: #EEEE; }
+  .boton-curso p {
+    background-color: #d82121f1;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 20px; }
+    .boton-curso p:hover {
+      text-decoration: underline;
+      background-color: #b11f33f1; }
+
+.cursos-main {
+  background-image: url(../img/acar.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
 header img {
   filter: invert(100%) sepia(1%) saturate(35%) hue-rotate(144deg) brightness(113%) contrast(87%);
   height: 70px;
@@ -59,29 +80,6 @@ header nav {
   border-radius: 50px;
   display: inline-block; }
 
-.sacabollos, .detallado, .plasticos {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../img/acar.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  margin: 10px;
-  display: flex;
-  align-items: center; }
-  .sacabollos div, .detallado div, .plasticos div {
-    width: 50%;
-    margin-left: 50px;
-    text-align: center;
-    margin-top: 50px; }
-    .sacabollos div h1, .detallado div h1, .plasticos div h1 {
-      padding: 30px;
-      font-size: 30px;
-      text-align: center;
-      letter-spacing: 2px; }
-    .sacabollos div p, .detallado div p, .plasticos div p {
-      font-size: larger; }
-
 .hero {
   padding: 30px;
   display: flex;
@@ -121,7 +119,7 @@ header nav {
 
 .about {
   width: 100;
-  text-align: center;
+  text-align: left;
   padding: 30px; }
   .about div h1 {
     font-size: 30px;
@@ -132,9 +130,17 @@ header nav {
     width: 90%; }
   .about div img {
     padding: 20px;
-    height: 120px;
-    width: 200px;
+    height: 150px;
+    width: 230px;
     margin-top: 50px; }
+
+.calificaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .calificaciones p {
+    text-align: center; }
 
 .nosotros {
   display: flex;
@@ -280,7 +286,7 @@ header nav {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  margin: 10px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -295,6 +301,10 @@ header nav {
     letter-spacing: 2px;
     font-size: 30px;
     padding: 10px; }
+
+.otros-medios {
+  font-size: 20px;
+  margin: 20px; }
 
 .formulario {
   width: 450px;
@@ -336,64 +346,143 @@ textarea {
 
 .chapa {
   width: 100%;
-  background-image: url(../img/acar.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  padding: 20px; }
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center; }
   .chapa h1 {
     padding-left: 80px;
     font-size: 35px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px; }
   .chapa ul {
     margin-bottom: inherit;
     font-size: 25px;
-    padding-left: 80px; }
+    padding-left: 80px;
+    margin-left: 20px; }
 
-.boton-curso {
-  width: fit-content;
-  background-color: #d82121f1;
-  border-radius: 7px;
-  border: #b31b1bf1 solid 3px;
-  text-align: center;
-  margin-left: 100px;
-  margin-top: 20px;
-  font-size: 20px;
-  padding: 13px 7px 1px 7px; }
-  .boton-curso a {
-    text-decoration: none;
-    color: #EEEE; }
-  .boton-curso:hover {
-    text-decoration: underline;
-    background-color: #b11f33f1; }
+.programa-chapa {
+  width: 50%; }
 
-.pintura {
+.imag-chapa {
+  width: 70%; }
+  .imag-chapa img {
+    height: 250px;
+    width: 350px;
+    border: #EEEE solid 5px; }
+
+.programa-pintura {
   width: 100%;
-  background-image: url(../img/acar.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  margin: 10px; }
-  .pintura h1 {
-    padding-left: 20px;
-    font-size: 40px;
-    letter-spacing: 2px; }
-  .pintura h2 {
-    padding-left: 20px;
-    font-size: 40px;
-    letter-spacing: 2px; }
-  .pintura ul {
-    margin-top: 10px;
-    font-size: 30px;
-    padding: 10px;
-    padding-left: 20px; }
-
-.programa-flex {
+  padding: 20px;
   display: flex;
-  gap: 70px;
-  justify-content: flex-start;
-  padding-left: 20px;
-  padding-top: 40px; }
+  justify-content: center;
+  align-items: center; }
+  .programa-pintura h1 {
+    padding-left: 80px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    margin-left: 20px; }
+  .programa-pintura ul {
+    margin-bottom: inherit;
+    font-size: 25px;
+    padding-left: 80px;
+    margin-left: 20px; }
+
+.imag-pintura {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .imag-pintura img {
+    height: 250px;
+    width: 350px;
+    border: #EEEE solid 5px; }
+
+.sacabollos {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .sacabollos h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 25px; }
+  .sacabollos p {
+    font-size: 25px; }
+
+.imag-sacabollos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .imag-sacabollos img {
+    height: 250px;
+    width: 350px;
+    border: #EEEE solid 5px; }
+
+.sacabollos-flex {
+  width: 70%; }
+
+.detallado {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .detallado h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 25px; }
+  .detallado p {
+    font-size: 25px; }
+
+.programa-detallado {
+  width: 70%; }
+
+.imag-detallado {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .imag-detallado img {
+    height: 250px;
+    width: 350px;
+    border: #EEEE solid 5px; }
+
+.plasticos {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .plasticos h1 {
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-top: 25px; }
+  .plasticos p {
+    font-size: 25px; }
+
+.programa-rep {
+  width: 70%; }
+
+.imag-rep {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .imag-rep img {
+    height: 250px;
+    width: 350px;
+    border: #EEEE solid 5px; }
 
 footer {
   background-color: #000000;
@@ -522,18 +611,18 @@ footer {
   .grid {
     grid-template-columns: 1fr;
     grid-auto-rows: 300px; }
-  .videos div iframe {
+  .videos video {
     height: 300px;
     width: 550px; } }
 
 @media screen and (max-width: 670px) {
-  .videos div iframe {
+  .videos video {
     height: 250px;
     width: 500px;
     border: none; } }
 
 @media screen and (max-width: 560px) {
-  .videos div iframe {
+  .videos video {
     height: 200px;
     width: 450px;
     border: none; }
@@ -541,7 +630,7 @@ footer {
     grid-auto-rows: 200px; } }
 
 @media screen and (max-width: 490px) {
-  .videos div iframe {
+  .videos video {
     height: 150px;
     width: 300px;
     border: none; }
@@ -549,7 +638,7 @@ footer {
     grid-auto-rows: 150px; } }
 
 @media screen and (max-width: 425px) {
-  .videos div iframe {
+  .videos video {
     height: 100px;
     width: 250px;
     border: none; }
@@ -579,21 +668,23 @@ footer {
     margin-left: 0px;
     margin-left: 0px; }
   .formulario {
-    width: 350px; }
+    width: 100%; }
   .formulario div textarea {
-    width: 300px; }
+    width: 100%; }
+  .boton {
+    width: fit-content; }
   .contacto iframe {
     height: 250px;
-    width: 250px; } }
+    width: 540px; } }
 
 @media screen and (max-width: 535px) {
   .formulario {
-    width: 250px; }
+    width: 100%; }
   .formulario div textarea {
-    width: 200px; }
+    width: 100%; }
   .contacto iframe {
     height: 250px;
-    width: 250px; } }
+    width: 500px; } }
 
 @media screen and (max-width: 520px) {
   .contacto {
@@ -604,76 +695,151 @@ footer {
     font-size: 25px; }
   .contacto iframe {
     height: 200px;
-    width: 200px; }
+    width: 450px; }
   .contacto div {
     margin: 1px; } }
 
+@media screen and (max-width: 459px) {
+  .contacto iframe {
+    width: 400px; } }
+
+@media screen and (max-width: 405px) {
+  .contacto iframe {
+    width: 350px; } }
+
+@media screen and (max-width: 360px) {
+  .contacto iframe {
+    width: 330px; } }
+
 @media screen and (max-width: 350px) {
   .formulario {
-    width: 200px; }
+    width: 100%; }
   .formulario div textarea {
-    width: 155px;
-    height: 50px; } }
+    width: 100%;
+    height: 50px; }
+  .contacto iframe {
+    width: 280px; } }
 
-@media screen and (max-width: 795px) {
-  .programa-chapa {
+@media screen and (max-width: 1252px) {
+  .chapa img {
+    width: 300px;
+    height: 200px;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 1142px) {
+  .imag-chapa {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-  .chapa h2 {
-    padding-left: 40px; }
-  .chapa ul {
-    padding-left: 40px; } }
+    align-items: center; }
+  .imag-chapa img {
+    height: 150px;
+    width: 250px; } }
 
-@media screen and (max-width: 415px) {
-  .chapa h2 {
+@media screen and (max-width: 790px) {
+  .imag-chapa {
+    display: flex;
+    align-items: flex-end;
+    width: fit-content; }
+  .chapa {
+    display: flex;
+    justify-content: space-between; }
+  .chapa h1 {
     font-size: 30px; }
-  .chapa ul {
+  .chapa p {
     font-size: 20px; } }
 
-@media screen and (max-width: 810px) {
-  .programa-flex {
+@media screen and (max-width: 658px) {
+  .chapa {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column-reverse; }
+  .programa-chapa {
+    margin-bottom: 10px;
+    width: 100%; }
+  .imag-chapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; } }
 
-@media screen and (max-width: 415px) {
-  .programa-flex h2 {
+@media screen and (max-width: 400px) {
+  .chapa h1 {
+    font-size: 25px; }
+  .chapa p {
+    font-size: 15px; }
+  .programa-chapa {
+    text-align: start; } }
+
+@media screen and (max-width: 1158px) {
+  .pintura img {
+    width: 300px;
+    height: 200px;
+    margin-left: 20px; } }
+
+@media screen and (max-width: 730px) {
+  .imag-pintura img {
+    height: 150px;
+    width: 250px; } }
+
+@media screen and (max-width: 658px) {
+  .programa-pintura {
+    display: flex;
+    flex-direction: column; }
+  .programa-pintura {
+    margin-bottom: 10px;
+    width: 100%; }
+  .imag-pintura {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 400px) {
+  .imag-pintura h1 {
+    font-size: 25px; }
+  .pintura p {
+    font-size: 15px; }
+  .programa-pintura {
+    text-align: start; } }
+
+@media screen and (max-width: 840px) {
+  .sacabollos-flex {
+    width: 80%; }
+  .imag-sacabollos img {
+    height: 150px;
+    width: 250px; } }
+
+@media screen and (max-width: 580px) {
+  .sacabollos h1 {
     font-size: 30px; }
-  .programa-flex ul {
+  .sacabollos p {
     font-size: 20px; } }
 
-@media screen and (max-width: 810px) {
-  .sacabollos {
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
+@media screen and (max-width: 840px) {
+  .programa-detallado {
+    width: 80%; }
+  .imag-detallado img {
+    height: 150px;
+    width: 250px; } }
 
-@media screen and (max-width: 540px) {
-  .sacabollos div {
-    width: auto;
-    margin: 5px; } }
+@media screen and (max-width: 580px) {
+  .detallado h1 {
+    font-size: 30px; }
+  .detallado p {
+    font-size: 20px; } }
 
-@media screen and (max-width: 810px) {
-  .detallado {
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
+@media screen and (max-width: 840px) {
+  .programa-reo {
+    width: 80%; }
+  .imag-rep img {
+    height: 150px;
+    width: 250px; } }
 
-@media screen and (max-width: 540px) {
-  .detallado div {
-    width: auto;
-    margin: 5px; } }
-
-@media screen and (max-width: 810px) {
-  .plasticos {
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
-
-@media screen and (max-width: 540px) {
-  .plasticos div {
-    width: auto;
-    margin: 5px; } }
+@media screen and (max-width: 580px) {
+  .plasticos h1 {
+    font-size: 30px; }
+  .plasticos p {
+    font-size: 20px; } }
 
 @media screen and (max-width: 540px) {
   footer div img {

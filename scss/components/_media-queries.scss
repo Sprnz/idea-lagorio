@@ -153,14 +153,14 @@
         grid-auto-rows: 300px;
     }
 
-    .videos div iframe {
+    .videos video {
         height: 300px;
         width: 550px;
     }
 }
 
 @media screen and (max-width:670px) {
-    .videos div iframe {
+    .videos video {
         height: 250px;
         width: 500px;
         border: none;
@@ -168,7 +168,7 @@
 }
 
 @media screen and (max-width:560px) {
-    .videos div iframe {
+    .videos video {
         height: 200px;
         width: 450px;
         border: none;
@@ -180,7 +180,7 @@
 }
 
 @media screen and (max-width:490px) {
-    .videos div iframe {
+    .videos video {
         height: 150px;
         width: 300px;
         border: none;
@@ -192,7 +192,7 @@
 }
 
 @media screen and (max-width:425px) {
-    .videos div iframe {
+    .videos video {
         height: 100px;
         width: 250px;
         border: none;
@@ -233,23 +233,25 @@
         margin-left: 0px;
         margin-left: 0px;}
 
-    .formulario {width: 350px}
+    .formulario {width: 100%;}
 
-    .formulario div textarea {width: 300px;}
+    .formulario div textarea {width: 100%;}
+
+    .boton {width: fit-content;}
     
     .contacto iframe {
         height: 250px;
-        width: 250px;}
+        width: 540px;}
 }
 
 @media screen and (max-width:535px) {
-    .formulario {width: 250px}
+    .formulario {width: 100%;}
     
-    .formulario div textarea {width: 200px;}
+    .formulario div textarea {width: 100%;}
     
     .contacto iframe {
         height: 250px;
-        width: 250px;}
+        width: 500px;}
 }
 
 @media screen and (max-width:520px) {
@@ -265,7 +267,7 @@
 
     .contacto iframe {
         height: 200px;
-        width: 200px;
+        width: 450px;
     }
 
     .contacto div {
@@ -273,108 +275,137 @@
     }
 }
 
+@media screen and (max-width:459px) {
+.contacto iframe {width: 400px;}
+}
+
+@media screen and (max-width:405px) {
+    .contacto iframe {width: 350px;}
+}
+
+    @media screen and (max-width:360px) {
+    .contacto iframe {width: 330px;}
+}
+
 @media screen and (max-width:350px) {
-    .formulario {width: 200px}
+    .formulario {width: 100%;}
     
-    .formulario div textarea {width: 155px;
-    height: 50px;}}
+    .formulario div textarea {width: 100%;
+    height: 50px;}
+        .contacto iframe {width: 280px;}
+}
 
 //curso chapa
 
-@media screen and (max-width:795px) {
-    .programa-chapa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .chapa h2 {
-        padding-left: 40px;
-    }
-
-    .chapa ul {
-        padding-left: 40px;
-    }
+@media screen and (max-width:1252px) {
+.chapa img {width: 300px;
+    height: 200px;
+    margin-left: 20px;}
 }
 
-@media screen and (max-width:415px) {
-    .chapa h2 {
-        font-size: 30px;
+@media screen and (max-width:1142px) {
+    .imag-chapa {display: flex;
+        flex-direction: column;
+        align-items: center;}
+    .imag-chapa img {height: 150px;
+        width: 250px;}
     }
 
-    .chapa ul {
-        font-size: 20px;
-    }
+@media screen and (max-width:790px) {
+    .imag-chapa {display: flex;
+    align-items: flex-end;
+    width: fit-content;}
+    .chapa {display: flex;
+    justify-content: space-between;}
+    .chapa h1 {font-size: 30px;}
+    .chapa p {font-size: 20px;}
+}
+
+@media screen and (max-width:658px) {
+    .chapa {display: flex;
+    flex-direction: column-reverse;}
+    .programa-chapa {margin-bottom: 10px;
+    width: 100%;}
+    .imag-chapa {display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;}
+}
+
+@media screen and (max-width:400px) {
+    .chapa h1 {font-size: 25px;}
+    .chapa p {font-size: 15px;}
+    .programa-chapa {text-align: start;}
 }
 
 //curso pintura
 
-@media screen and (max-width:810px) {
-    .programa-flex {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width:1158px) {
+    .pintura img {width: 300px;
+        height: 200px;
+        margin-left: 20px;}
     }
+
+@media screen and (max-width:730px) {
+    .imag-pintura img {height: 150px;
+        width: 250px;}
 }
 
-@media screen and (max-width:415px) {
-    .programa-flex h2 {
-        font-size: 30px;
-    }
+@media screen and (max-width:658px) {
+    .programa-pintura {display: flex;
+    flex-direction: column;}
+    .programa-pintura {margin-bottom: 10px;
+    width: 100%;}
+    .imag-pintura {width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;}
+}
 
-    .programa-flex ul {
-        font-size: 20px;
-    }
+@media screen and (max-width:400px) {
+    .imag-pintura h1 {font-size: 25px;}
+    .pintura p {font-size: 15px;}
+    .programa-pintura {text-align: start;}
 }
 
 //curso sacabollos
 
-@media screen and (max-width:810px) {
-    .sacabollos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width:840px) {
+    .sacabollos-flex {width: 80%;}
+    .imag-sacabollos img {height: 150px;
+        width: 250px;}
 }
 
-@media screen and (max-width:540px) {
-    .sacabollos div {
-        width: auto;
-        margin: 5px;
-    }
+@media screen and (max-width:580px) {
+    .sacabollos h1 {font-size: 30px;}
+    .sacabollos p {font-size: 20px;}
 }
 
 //curso detallado
 
-@media screen and (max-width:810px) {
-    .detallado {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width:840px) {
+    .programa-detallado {width: 80%;}
+    .imag-detallado img {height: 150px;
+        width: 250px;}
 }
 
-@media screen and (max-width:540px) {
-    .detallado div {
-        width: auto;
-        margin: 5px;
-    }
+@media screen and (max-width:580px) {
+    .detallado h1 {font-size: 30px;}
+    .detallado p {font-size: 20px;}
 }
 
 //curso rep plasticos
 
-@media screen and (max-width:810px) {
-    .plasticos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width:840px) {
+    .programa-reo {width: 80%;}
+    .imag-rep img {height: 150px;
+        width: 250px;}
 }
 
-@media screen and (max-width:540px) {
-    .plasticos div {
-        width: auto;
-        margin: 5px;
-    }
+@media screen and (max-width:580px) {
+    .plasticos h1 {font-size: 30px;}
+    .plasticos p {font-size: 20px;}
 }
 
 //footer

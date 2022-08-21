@@ -15,3 +15,21 @@ body {
     color: #EEEE;
     a {color:#EEEE}
 }
+
+.boton-curso {
+    display: flex;
+    justify-content: center;
+    a {text-decoration: none;
+        color: #EEEE;}
+    p {background-color: #d82121f1;
+        border-radius: 7px;
+        padding: 5px;
+        font-size: 20px;
+        &:hover {text-decoration: underline;
+            background-color: #b11f33f1;}}
+}
+
+.cursos-main {background-image: url(../img/acar.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;}
