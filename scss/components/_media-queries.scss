@@ -123,6 +123,9 @@
     .productos p {
         font-size: 30px;
     }
+
+    .otra-consulta p {font-size: 20px;}
+    .otra-consulta a {font-size: 20px;}
 }
 
 @media screen and (max-width:350px) {
@@ -181,8 +184,8 @@
 
 @media screen and (max-width:490px) {
     .videos video {
-        height: 150px;
-        width: 300px;
+        height: 180px;
+        width: 400px;
         border: none;
     }
 

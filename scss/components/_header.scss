@@ -34,7 +34,8 @@ header {
     color: #EEEE;}
     &:hover {color: inherit;}}
 
-.navbar-collapse {background-color: $color-principal;}
+.navbar-collapse {background-color: $color-principal;
+z-index: 99999999;}
 
 .navbar-toggler {
     background-color: #EEEE;}

@@ -66,7 +66,8 @@ header nav {
   color: inherit; }
 
 .navbar-collapse {
-  background-color: #000000; }
+  background-color: #000000;
+  z-index: 99999999; }
 
 .navbar-toggler {
   background-color: #EEEE; }
@@ -591,7 +592,11 @@ footer {
   .productos h2 {
     font-size: 25px; }
   .productos p {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .otra-consulta p {
+    font-size: 20px; }
+  .otra-consulta a {
+    font-size: 20px; } }
 
 @media screen and (max-width: 350px) {
   .productos p {
@@ -631,8 +636,8 @@ footer {
 
 @media screen and (max-width: 490px) {
   .videos video {
-    height: 150px;
-    width: 300px;
+    height: 180px;
+    width: 400px;
     border: none; }
   .grid {
     grid-auto-rows: 150px; } }
